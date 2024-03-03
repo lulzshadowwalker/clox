@@ -6,6 +6,8 @@
 #include "value.h"
 #include "chunk.h" 
 
+// TODO: maybe `void init_chunk(Chunk*)` better be replaced with `Chunk* init_chunk()`
+
 void init_chunk(Chunk *chunk) {
   chunk->count = 0; 
   chunk->capacity = 0; 

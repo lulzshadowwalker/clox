@@ -8,6 +8,11 @@
 typedef enum {
   OP_CONSTANT,
   OP_RETURN,
+  OP_ADD,
+  OP_SUBTRACT,
+  OP_MULTIPLY,
+  OP_DIVIDE,
+  OP_NEGATE, 
 } OpCode;
 
 typedef struct {
@@ -15,6 +20,8 @@ typedef struct {
   int capacity;
   uint8_t* code; 
   int* lines; 
+  
+  // constants pool
   ValueArray constants;
 } Chunk; 
 
